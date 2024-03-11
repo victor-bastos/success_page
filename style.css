@@ -19,7 +19,7 @@ h1, h2 {
 }
 
 h1 {
-    color: #99d8a2; /* Suavizado para melhor contraste */
+    color: #c8ecd4; /* Suavizado para melhor contraste */
 }
 
 h2 {
@@ -43,12 +43,21 @@ main {
     cursor: pointer;
     font-weight: bold; /* Texto em negrito */
     transition: background-color 0.3s ease;
+    position: relative; /* Para a seta de dropdown */
+}
+
+.accordion .toggle::after {
+    content: '▼'; /* Seta para baixo */
+    color: #fff; /* Cor que contraste com o fundo */
+    position: absolute;
+    right: 10px;
+    transition: transform 0.3s ease;
 }
 
 .accordion .content {
     display: none;
-    padding: 15px;
-    background-color: #99d8a2; /* Verde claro, corrigido para uma diferente do texto */
+    padding: 10px;
+    background-color: #99d8a2; /* Verde claro */
     border-radius: 5px;
     margin-top: 5px;
     border: 1px solid #62c370; /* Verde médio */
@@ -75,33 +84,34 @@ footer {
 }
 
 .accordion .toggle.active::after {
-    transform: rotate(-180deg);
+    transform: rotate(180deg); /* Gira a seta quando ativo */
 }
 
 .diet-recommendations > div {
     background-color: #e4f2ec; /* Fundo claro */
-    padding: 15px;
+    padding: 10px 15px; /* Ajuste de padding */
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
     border-left: 5px solid #2c9243; /* Linha lateral verde escuro para destaque */
+    position: relative; /* Para o espaçamento como 'enter' */
 }
 
-.diet-recommendations > div:not(:first-child) {
-    margin-top: 25px; /* Espaço visual como 'enter' */
+.diet-recommendations h3 {
+    margin-top: 0;
+    padding-top: 10px; /* Espaço antes do título */
 }
 
-.icon {
-    font-weight: bold;
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+.diet-recommendations ul {
+    margin-bottom: 10px; /* Espaço depois do último item */
 }
 
-.green {
-    color: #4CAF50; /* Verde para ícone, diferente do fundo */
+.icon.green {
+    color: #4CAF50; /* Ajuste para garantir visibilidade */
 }
 
-.red {
-    color: #F44336; /* Vermelho para ícone */
+.icon.red {
+    color: #F44336; /* Ajuste para garantir visibilidade */
 }
 
 .diet-recommendations ul {
@@ -116,7 +126,7 @@ footer {
 
 .diet-recommendations li::before {
     content: '•';
-    color: #4a8d7c; /* Cor para combinar, ajustada para visibilidade */
+    color: #4a8d7c; /* Cor ajustada para visibilidade */
     position: absolute;
     left: -15px;
 }
