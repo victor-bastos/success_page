@@ -85,3 +85,37 @@ footer {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave */
 }
+
+
+/* Restante do CSS (mantido igual) */
+
+/* Estilos para ícones */
+.icon {
+    font-weight: bold;
+}
+
+.green {
+    color: #4CAF50; /* Verde */
+}
+
+.red {
+    color: #F44336; /* Vermelho */
+}
+
+/* Estilização das listas */
+.diet-recommendations ul {
+    list-style: none; /* Remove o estilo padrão da lista */
+    padding-left: 20px; /* Espaçamento interno à esquerda */
+}
+
+.diet-recommendations li {
+    margin-bottom: 5px; /* Espaço entre os itens */
+    position: relative; /* Para posicionar os pseudo-elementos */
+}
+
+.diet-recommendations li::before {
+    content: '•'; /* Bullet customizado */
+    color: #4a8d7c; /* Cor para combinar com o tema */
+    position: absolute;
+    left: -15px; /* Posiciona o bullet à esquerda do texto */
+}
