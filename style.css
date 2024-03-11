@@ -55,6 +55,10 @@ main {
     border-radius: 5px;
 }
 
+.accordion .content.active {
+    display: block; /* Mostra quando ativo */
+    }
+
 .accordion input[type="checkbox"]:checked ~ .content {
     display: block;
 }
