@@ -89,15 +89,6 @@ footer {
 }
 
 
-.accordion .toggle::before {
-    content: '+ ';
-    font-weight: bold;
-}
-
-.accordion .toggle.active::before {
-    content: '- ';
-}
-
 .accordion .toggle::after {
     content: '▼';
     font-size: 1em;
