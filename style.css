@@ -78,3 +78,13 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+.accordion .toggle::before {
+    content: '+ ';
+    font-weight: bold;
+}
+
+.accordion .toggle.active::before {
+    content: '- ';
+}
