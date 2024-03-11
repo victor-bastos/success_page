@@ -13,8 +13,11 @@ header {
     text-align: center;
 }
 
-h1 {
+h1, h2 {
     margin: 0;
+}
+
+h1 {
     color: #99d8a2;
 }
 
@@ -26,22 +29,40 @@ h2 {
 main {
     padding: 20px;
     background-color: #f0f0f0;
+    position: relative;
 }
 
-section h3 {
-    color: #2c9243;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #99d8a2;
+.accordion .item {
     margin-bottom: 10px;
+}
+
+.accordion .toggle {
+    display: block;
+    background-color: #99d8a2;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion input[type="checkbox"] {
+    display: none;
+}
+
+.accordion .content {
+    display: none;
+    padding: 10px;
+    background-color: #62c370;
+    border-radius: 5px;
+}
+
+.accordion input[type="checkbox"]:checked ~ .content {
+    display: block;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    max-width: 100px; /* Ajuste conforme necessário */
 }
 
 footer {
