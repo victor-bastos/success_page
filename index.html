@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
     <title>GluttCard</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,28 +12,17 @@
         <h2>Bem-vindo, [Nome do Usuário]</h2>
     </header>
     <main>
-        <section>
-            <h3>Alergias e Intolerâncias</h3>
-            <div class="accordion">
-                <div class="item">
-                    <div class="toggle">Doença Celíaca</div>
-                    <div class="content">Descrição da doença celíaca...</div>
+        <section class="accordion">
+            <div class="item">
+                <div class="toggle">Posso Comer</div>
+                <div class="content">
+                    <p>Frutas, vegetais, arroz, carnes magras... Texto mais longo para testar as restrições e como o conteúdo se adapta ao expandir o acordeão. Isso deve proporcionar uma melhor visualização da funcionalidade.</p>
                 </div>
-                <div class="item">
-                    <div class="toggle">Intolerância ao Glúten</div>
-                    <div class="content">Descrição da intolerância ao glúten...</div>
-                </div>
-                <div class="item">
-                    <div class="toggle">Intolerância à Lactose</div>
-                    <div class="content">Descrição da intolerância à lactose...</div>
-                </div>
-                <div class="item">
-                    <div class="toggle">Tireoidite de Hashimoto</div>
-                    <div class="content">Descrição da Tireoidite de Hashimoto...</div>
-                </div>
-                <div class="item">
-                    <div class="toggle">Diabetes</div>
-                    <div class="content">Descrição da Diabetes...</div>
+            </div>
+            <div class="item">
+                <div class="toggle">Não Posso Comer</div>
+                <div class="content">
+                    <p>Glúten, lactose, açúcares refinados... Aqui temos uma lista mais detalhada do que deve ser evitado. Cada condição de saúde pode ter restrições específicas, o que é importante para gerenciar a dieta corretamente.</p>
                 </div>
             </div>
         </section>
