@@ -37,27 +37,36 @@ main {
 }
 
 .accordion .toggle {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #99d8a2;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .accordion input[type="checkbox"] {
     display: none;
 }
 
+/* Melhoria visual para o conteúdo do acordeão */
 .accordion .content {
     display: none;
     padding: 10px;
     background-color: #62c370;
     border-radius: 5px;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    border: 1px solid #4ca860; /* Adiciona uma borda para melhor definição */
 }
 
 .accordion .content.active {
     display: block; /* Mostra quando ativo */
-    }
+    padding: 15px; /* Aumenta o padding para mais espaço */
+}
+
 
 .accordion input[type="checkbox"]:checked ~ .content {
     display: block;
@@ -87,4 +96,22 @@ footer {
 
 .accordion .toggle.active::before {
     content: '- ';
+}
+
+.accordion .toggle::after {
+    content: '▼';
+    font-size: 1em;
+    transition: transform 0.3s ease;
+}
+
+/* Rota a seta para cima quando o conteúdo está ativo */
+.accordion .toggle.active::after {
+    transform: rotate(-180deg);
+}
+
+/* Estilização da logo para melhor integração */
+.logo {
+    display: block;
+    margin: 30px auto 10px;
+    max-width: 150px; /* Ajuste para melhor visualização */
 }
