@@ -147,3 +147,18 @@ footer {
     width: 100%; /* Faz com que a imagem preencha o espaço disponível */
     height: auto; /* Mantém a proporção da imagem */
 }
+
+.google-translate-container {
+    max-width: 100px; /* Defina a largura máxima desejada para a caixa de idiomas */
+}
+
+
+.google-translate-container {
+    /*background-color: #e4f2ec; /* Cor de fundo */
+    padding: 45px; /* Espaçamento interno */
+    position: fixed; /* Posição fixa */
+    top: -30px; /* Ajuste a posição conforme necessário */
+    right: 10px; /* Ajuste a posição conforme necessário */
+    border-radius: 5px; /* Borda arredondada */
+    z-index: 9999; /* Certifique-se de que esteja acima de outros elementos */
+}
