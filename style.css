@@ -130,3 +130,20 @@ footer {
     position: absolute;
     left: -15px;
 }
+
+
+.pokemon-card {
+    /* Exemplo de estilização; ajuste conforme necessário */
+    border: 2px solid #62c370; /* Verde médio */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 300px; /* Ou a largura desejada */
+}
+
+.pokemon-image {
+    width: 100%; /* Faz com que a imagem preencha o espaço disponível */
+    height: auto; /* Mantém a proporção da imagem */
+}

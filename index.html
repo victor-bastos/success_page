@@ -11,7 +11,18 @@
         <h1>GluttCard</h1>
         <h2>[Nome do Usuário]</h2>
     </header>
+    <!-- Posicionando o widget do Google Tradutor logo abaixo do header -->
+    <div id="google_translate_element" style="text-align: right; background-color: #f9f9f9; padding: 2px;"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <main>
+        <!-- Inserção da imagem do Pokémon logo abaixo do cabeçalho -->
+        <img src="" alt="Imagem do Pokémon" class="pokemon-image" style="display: block; max-width: 33%; height: auto; margin: 6px auto;">
         <section class="accordion">
             <div class="item">
                 <div class="toggle">Doença Celíaca</div>
@@ -53,7 +64,6 @@
                     <li>Carnes magras</li>
                     <li>Peixes</li>
                     <li>Ovos</li>
-                    <!-- Adicione mais itens conforme necessário -->
                 </ul>
             </div>
             <div class="cannot-eat">
@@ -63,7 +73,6 @@
                     <li>Lactose</li>
                     <li>Alimentos altamente processados</li>
                     <li>Açúcares refinados</li>
-                    <!-- Adicione mais itens conforme necessário -->
                 </ul>
             </div>
         </section>
