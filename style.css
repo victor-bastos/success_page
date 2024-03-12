@@ -154,11 +154,15 @@ footer {
 
 
 .google-translate-container {
-    /*background-color: #e4f2ec; /* Cor de fundo */
-    padding: 45px; /* Espaçamento interno */
-    position: fixed; /* Posição fixa */
-    top: -30px; /* Ajuste a posição conforme necessário */
-    right: 30px; /* Ajuste a posição conforme necessário */
+    background-color: inherit; /* Herda a cor de fundo do elemento pai */
+    padding: 10px; /* Espaçamento interno */
+    /*position: fixed; /* Posição fixa */
+    top: calc(12%); /* Posiciona verticalmente no centro */
+    right: 97.5%; /* Define uma margem à direita */
     border-radius: 5px; /* Borda arredondada */
-    z-index: 9999; /* Certifique-se de que esteja acima de outros elementos */
+    z-index: 9999; /* Certifica-se de que esteja acima de outros elementos */
+    max-width: 150px; /* Largura máxima desejada */
+    max-height: 1px; /* Altura máxima desejada */
 }
+
+
