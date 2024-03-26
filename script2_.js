@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelector('header h2').textContent = `${pokemonName}`;
 
                 const pokemonImageURL = data.sprites.front_default;
-                const pokemonImageElement = document.querySelector('.pokemon-image');
+                const pokemonImageElement = document.querySelector('.user-image');
                 if (pokemonImageElement) {
                     pokemonImageElement.src = pokemonImageURL;
                     pokemonImageElement.alt = `Imagem de ${pokemonName}`;
